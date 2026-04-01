@@ -222,39 +222,35 @@
   </nav>
 
   <!-- ============ HERO ============ -->
-  <section id="about" class="min-h-screen flex items-center pt-16">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full py-20 lg:py-0">
-      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-        <!-- Image -->
-        <div class="reveal order-2 lg:order-1 flex justify-center lg:pt-4">
-          <div class="hero-img-wrap relative w-72 h-96 md:w-80 md:h-[28rem] lg:w-[22rem] lg:h-[28rem] rounded-2xl overflow-hidden shadow-accent">
-            <img src="images/hero-portrait.jpg" alt="Pradyumn Tendulkar" class="w-full h-full object-cover object-top">
-          </div>
-        </div>
-        <!-- Text -->
-        <div class="order-1 lg:order-2">
-          <p class="text-accent font-medium text-sm uppercase tracking-widest mb-4 reveal">Welcome to My Portfolio</p>
-          <h1 class="font-display text-6xl md:text-7xl lg:text-8xl font-bold text-txt-primary leading-[0.95] mb-6 reveal" style="transition-delay: 0.1s; letter-spacing: 0.06em;">
-            <span class="block text-4xl md:text-5xl lg:text-6xl tracking-tight" style="letter-spacing: -0.02em;">AI</span>
-            <span class="block" style="letter-spacing: 0.08em;">ENGINEER</span>
-          </h1>
-          <div class="w-16 h-0.5 bg-accent mb-6 reveal" style="transition-delay: 0.15s;"></div>
-          <p class="text-txt-secondary text-lg md:text-xl leading-relaxed mb-4 reveal" style="transition-delay: 0.2s;">
-            Specialist in Enterprise Workflow Automation.
-          </p>
-          <p class="text-txt-secondary leading-relaxed mb-8 reveal" style="transition-delay: 0.25s;">
-            I build AI systems that automate complex enterprise workflows, from multi-agent pipelines to document processing. Research-backed, production-tested, and always shipping with measurable results.
-          </p>
-          <div class="flex flex-wrap gap-4 reveal" style="transition-delay: 0.3s;">
-            <a href="#contact" class="inline-flex items-center gap-2 px-7 py-3 bg-accent text-txt-primary font-medium rounded-lg hover:bg-accent-light active:bg-accent-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent-light focus-visible:outline-offset-2" style="transition: background-color 0.3s cubic-bezier(0.34,1.56,0.64,1), transform 0.2s; box-shadow: 0 4px 20px rgba(194,59,78,0.3);">
-              MESSAGE ME
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 8h14M9 2l6 6-6 6"/></svg>
-            </a>
-            <a href="https://github.com/pradyten" target="_blank" class="inline-flex items-center gap-2 px-7 py-3 border border-border text-txt-secondary font-medium rounded-lg hover:border-accent hover:text-txt-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent" style="transition: border-color 0.3s, color 0.3s;">
-              GitHub Profile
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 13L13 1M13 1H5M13 1v8"/></svg>
-            </a>
-          </div>
+  <section id="about" class="min-h-screen flex flex-col lg:flex-row pt-16">
+    <!-- Image — full-bleed left column, ~40% width on desktop -->
+    <div class="hero-img-wrap relative w-full lg:w-[40%] h-[50vh] lg:h-auto lg:min-h-screen flex-shrink-0 overflow-hidden">
+      <img src="images/hero-portrait.png" alt="Pradyumn Tendulkar" class="w-full h-full object-cover object-center absolute inset-0">
+    </div>
+    <!-- Text — right column -->
+    <div class="flex-1 flex items-center">
+      <div class="px-8 lg:px-16 xl:px-24 py-16 lg:py-0 w-full max-w-2xl">
+        <p class="text-accent font-medium text-sm uppercase tracking-widest mb-4 reveal">Welcome to My Portfolio</p>
+        <h1 class="font-display text-6xl md:text-7xl lg:text-8xl font-bold text-txt-primary leading-[0.95] mb-6 reveal" style="transition-delay: 0.1s; letter-spacing: 0.06em;">
+          <span class="block text-4xl md:text-5xl lg:text-6xl tracking-tight" style="letter-spacing: -0.02em;">AI</span>
+          <span class="block" style="letter-spacing: 0.08em;">ENGINEER</span>
+        </h1>
+        <div class="w-16 h-0.5 bg-accent mb-6 reveal" style="transition-delay: 0.15s;"></div>
+        <p class="text-txt-secondary text-lg md:text-xl leading-relaxed mb-4 reveal" style="transition-delay: 0.2s;">
+          Specialist in Enterprise Workflow Automation.
+        </p>
+        <p class="text-txt-secondary leading-relaxed mb-8 reveal" style="transition-delay: 0.25s;">
+          I build AI systems that automate complex enterprise workflows, from multi-agent pipelines to document processing. Research-backed, production-tested, and always shipping with measurable results.
+        </p>
+        <div class="flex flex-wrap gap-4 reveal" style="transition-delay: 0.3s;">
+          <a href="#contact" class="inline-flex items-center gap-2 px-7 py-3 bg-accent text-txt-primary font-medium rounded-lg hover:bg-accent-light active:bg-accent-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent-light focus-visible:outline-offset-2" style="transition: background-color 0.3s cubic-bezier(0.34,1.56,0.64,1), transform 0.2s; box-shadow: 0 4px 20px rgba(194,59,78,0.3);">
+            MESSAGE ME
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 8h14M9 2l6 6-6 6"/></svg>
+          </a>
+          <a href="https://github.com/pradyten" target="_blank" class="inline-flex items-center gap-2 px-7 py-3 border border-border text-txt-secondary font-medium rounded-lg hover:border-accent hover:text-txt-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent" style="transition: border-color 0.3s, color 0.3s;">
+            GitHub Profile
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 13L13 1M13 1H5M13 1v8"/></svg>
+          </a>
         </div>
       </div>
     </div>
@@ -267,12 +263,12 @@
         <p class="text-accent font-medium text-sm uppercase tracking-widest mb-3">Selected Projects</p>
         <h2 class="font-display text-4xl md:text-5xl font-bold text-txt-primary track-tight">My Work</h2>
       </div>
-      <div class="grid md:grid-cols-2 gap-8">
+      <div class="grid md:grid-cols-2 gap-10">
 
         <!-- Project 1: RAG Legal Engine -->
         <div class="reveal bg-bg-elevated rounded-2xl overflow-hidden border border-border hover:border-accent/30 group" style="transition: border-color 0.4s, box-shadow 0.4s; box-shadow: 0 4px 24px -4px rgba(194,59,78,0.08);" onmouseenter="this.style.boxShadow='0 8px 40px -8px rgba(194,59,78,0.18)'" onmouseleave="this.style.boxShadow='0 4px 24px -4px rgba(194,59,78,0.08)'">
-          <div class="project-img-wrap h-52">
-            <img src="https://placehold.co/600x300/1e1218/6b5560?text=RAG+Legal+Engine" alt="RAG Legal Engine" class="w-full h-full object-cover group-hover:scale-105" style="transition: transform 0.6s cubic-bezier(0.34,1.56,0.64,1);">
+          <div class="project-img-wrap h-72 bg-[#0a0608]">
+            <img src="images/project-rag-legal-engine.png" alt="RAG Legal Engine" class="w-full h-full object-contain group-hover:scale-105" style="transition: transform 0.6s cubic-bezier(0.34,1.56,0.64,1);">
           </div>
           <div class="p-6">
             <div class="flex flex-wrap gap-2 mb-3">
@@ -298,7 +294,7 @@
 
         <!-- Project 2: AI Content Pipeline -->
         <div class="reveal bg-bg-elevated rounded-2xl overflow-hidden border border-border hover:border-accent/30 group" style="transition: border-color 0.4s, box-shadow 0.4s; box-shadow: 0 4px 24px -4px rgba(194,59,78,0.08);" onmouseenter="this.style.boxShadow='0 8px 40px -8px rgba(194,59,78,0.18)'" onmouseleave="this.style.boxShadow='0 4px 24px -4px rgba(194,59,78,0.08)'">
-          <div class="project-img-wrap h-52">
+          <div class="project-img-wrap h-72 bg-[#0a0608]">
             <img src="images/project-ai-content-pipeline.png" alt="AI Content Pipeline Architecture" class="w-full h-full object-cover object-top group-hover:scale-105" style="transition: transform 0.6s cubic-bezier(0.34,1.56,0.64,1);">
           </div>
           <div class="p-6">
@@ -325,8 +321,8 @@
 
         <!-- Project 3: Vision-to-JSON -->
         <div class="reveal bg-bg-elevated rounded-2xl overflow-hidden border border-border hover:border-accent/30 group" style="transition: border-color 0.4s, box-shadow 0.4s; box-shadow: 0 4px 24px -4px rgba(194,59,78,0.08);" onmouseenter="this.style.boxShadow='0 8px 40px -8px rgba(194,59,78,0.18)'" onmouseleave="this.style.boxShadow='0 4px 24px -4px rgba(194,59,78,0.08)'">
-          <div class="project-img-wrap h-52">
-            <img src="https://placehold.co/600x300/1e1218/6b5560?text=Vision-to-JSON" alt="Vision-to-JSON" class="w-full h-full object-cover group-hover:scale-105" style="transition: transform 0.6s cubic-bezier(0.34,1.56,0.64,1);">
+          <div class="project-img-wrap h-72 bg-[#0a0608]">
+            <img src="https://placehold.co/600x400/1e1218/6b5560?text=Vision-to-JSON" alt="Vision-to-JSON" class="w-full h-full object-cover group-hover:scale-105" style="transition: transform 0.6s cubic-bezier(0.34,1.56,0.64,1);">
           </div>
           <div class="p-6">
             <div class="flex flex-wrap gap-2 mb-3">
@@ -351,8 +347,8 @@
 
         <!-- Project 4: Water Turbidity -->
         <div class="reveal bg-bg-elevated rounded-2xl overflow-hidden border border-border hover:border-accent/30 group" style="transition: border-color 0.4s, box-shadow 0.4s; box-shadow: 0 4px 24px -4px rgba(194,59,78,0.08);" onmouseenter="this.style.boxShadow='0 8px 40px -8px rgba(194,59,78,0.18)'" onmouseleave="this.style.boxShadow='0 4px 24px -4px rgba(194,59,78,0.08)'">
-          <div class="project-img-wrap h-52">
-            <img src="https://placehold.co/600x300/1e1218/6b5560?text=Water+Turbidity" alt="Water Turbidity" class="w-full h-full object-cover group-hover:scale-105" style="transition: transform 0.6s cubic-bezier(0.34,1.56,0.64,1);">
+          <div class="project-img-wrap h-72 bg-[#0a0608]">
+            <img src="https://placehold.co/600x400/1e1218/6b5560?text=Water+Turbidity" alt="Water Turbidity" class="w-full h-full object-cover group-hover:scale-105" style="transition: transform 0.6s cubic-bezier(0.34,1.56,0.64,1);">
           </div>
           <div class="p-6">
             <div class="flex flex-wrap gap-2 mb-3">
@@ -371,8 +367,8 @@
         <!-- Project 5: Facial Emotion (full width) -->
         <div class="reveal md:col-span-2 bg-bg-elevated rounded-2xl overflow-hidden border border-border hover:border-accent/30 group" style="transition: border-color 0.4s, box-shadow 0.4s; box-shadow: 0 4px 24px -4px rgba(194,59,78,0.08);" onmouseenter="this.style.boxShadow='0 8px 40px -8px rgba(194,59,78,0.18)'" onmouseleave="this.style.boxShadow='0 4px 24px -4px rgba(194,59,78,0.08)'">
           <div class="grid md:grid-cols-2">
-            <div class="project-img-wrap h-52 md:h-auto">
-              <img src="https://placehold.co/600x300/1e1218/6b5560?text=Facial+Emotion+Detection" alt="Facial Emotion Detection" class="w-full h-full object-cover group-hover:scale-105" style="transition: transform 0.6s cubic-bezier(0.34,1.56,0.64,1);">
+            <div class="project-img-wrap h-72 md:h-auto bg-[#0a0608]">
+              <img src="https://placehold.co/600x400/1e1218/6b5560?text=Facial+Emotion+Detection" alt="Facial Emotion Detection" class="w-full h-full object-cover group-hover:scale-105" style="transition: transform 0.6s cubic-bezier(0.34,1.56,0.64,1);">
             </div>
             <div class="p-6 flex flex-col justify-center">
               <div class="flex flex-wrap gap-2 mb-3">
@@ -922,6 +918,11 @@
       });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Make hero reveal elements visible immediately on load
+    document.querySelectorAll('#about .reveal').forEach(el => {
+      el.classList.add('visible');
+    });
 
     // 6. Nav background on scroll + active link highlighting
     const navbar = document.getElementById('navbar');
