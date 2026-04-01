@@ -138,3 +138,16 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vercel
+
+# Claude Code / Playwright
+.claude/
+.playwright-mcp/
+
+# Reference and source images (not used in production)
+hero_ref_*.png
+reference.webp
+portfolio_reference.mp4
+test.png
+profile_crop.PNG
+ChatGPT Image *.png
+Gemini_Generated_Image_*.png
